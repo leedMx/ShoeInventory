@@ -10,4 +10,6 @@
     <string name="welcome_description">This is a sample application to showcase some of Android applications basic functionality. \nPlease click the instructionsbutton to continue</string>
     <string name="welcome">Welcome</string>
     <string name="instructions">Instructions</string>
+    <string name="instructions_text">You will see a list of shoes to which you can freely add new shoes.\nIt is a simple ViewModel implementation that should be conserved even after a configuration change such as the process being killed or a device rotation.</string>
+    <string name="start">Start</string>
 </resources>
