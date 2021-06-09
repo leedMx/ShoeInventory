@@ -6,10 +6,10 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 
-class LoginFragment : Fragment() {
-
+class WelcomeFragment : Fragment() {
     override fun onCreateView(
-        i: LayoutInflater, c: ViewGroup?, bundle: Bundle?): View? {
-        return i.inflate(R.layout.fragment_login, c, false)
+        li: LayoutInflater, vg: ViewGroup?, bundle: Bundle?
+    ): View? {
+        return li.inflate(R.layout.fragment_welcome, vg, false)
     }
 }
