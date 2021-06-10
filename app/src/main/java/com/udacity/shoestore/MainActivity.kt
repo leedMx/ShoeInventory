@@ -28,14 +28,4 @@ class MainActivity : AppCompatActivity() {
         navigation.navigateUp()
         return super.onSupportNavigateUp()
     }
-
-    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
-        menuInflater.inflate(R.menu.logout_menu,menu)
-        return super.onCreateOptionsMenu(menu)
-    }
-
-    override fun onOptionsItemSelected(item: MenuItem): Boolean {
-        return NavigationUI.onNavDestinationSelected(item,navigation) ||
-        super.onOptionsItemSelected(item)
-    }
 }
