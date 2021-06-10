@@ -22,17 +22,17 @@
             app:layout_constraintTop_toTopOf="parent">
 
             <TextView
+                style="@style/header"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/welcome"
-                android:textAlignment="center"
-                android:textSize="60sp"
-                android:textStyle="bold" />
+                android:text="@string/welcome" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/welcome_description" />
+                android:text="@string/welcome_description"
+                style="@style/contentText"/>
+
         </LinearLayout>
 
         <Button
