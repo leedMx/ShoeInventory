@@ -13,4 +13,5 @@
     <string name="instructions_text">You will see a list of shoes to which you can freely add new shoes.\nIt is a simple ViewModel implementation that should be conserved even after a configuration change such as the process being killed or a device rotation.</string>
     <string name="start">Start</string>
     <string name="add_shoe">Add Shoe</string>
+    <string name="log_out">Log out</string>
 </resources>
