@@ -4,13 +4,14 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.TextView
 import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import androidx.lifecycle.observe
 import androidx.navigation.fragment.findNavController
 import com.udacity.shoestore.databinding.FragmentShoeListBinding
-import timber.log.Timber
+import com.udacity.shoestore.models.Shoe
 
 class ShoeListFragment : Fragment() {
     private lateinit var binding: FragmentShoeListBinding
@@ -39,6 +40,18 @@ class ShoeListFragment : Fragment() {
 
     private fun setObserver() {
         viewModel.shoes.observe(viewLifecycleOwner)
-        { list -> Timber.i(list.toString()) }
+        { list -> for (shoe in list) makeShoeRow(shoe) }
+    }
+
+    private fun makeShoeRow(shoe: Shoe) {
+        val textView = TextView(requireContext())
+        with(shoe) {
+            val text = String.format(
+                "Name:%s Size:%s%nCompany:%s %nDescription:%s",
+                name, size, company, description
+            )
+            textView.text = text
+        }
+        binding.shoesLinearLayout.addView(textView)
     }
 }
