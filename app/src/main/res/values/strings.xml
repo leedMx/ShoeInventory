@@ -14,4 +14,8 @@
     <string name="start">Start</string>
     <string name="add_shoe">Add Shoe</string>
     <string name="log_out">Log out</string>
+    <string name="shoe_name">Name:</string>
+    <string name="company">Company:</string>
+    <string name="shoe_size_label">Size:</string>
+    <string name="shoe_description_label">Description</string>
 </resources>
