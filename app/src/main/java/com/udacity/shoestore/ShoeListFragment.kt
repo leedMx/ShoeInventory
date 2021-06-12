@@ -5,6 +5,7 @@ import android.view.*
 import android.widget.TextView
 import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
+import androidx.fragment.app.activityViewModels
 import androidx.lifecycle.ViewModelProvider
 import androidx.lifecycle.observe
 import androidx.navigation.fragment.findNavController
@@ -15,12 +16,11 @@ import timber.log.Timber
 
 class ShoeListFragment : Fragment() {
     private lateinit var binding: FragmentShoeListBinding
-    private lateinit var viewModel: ShoeListViewModel
+    private val viewModel by activityViewModels<ShoeListViewModel>()
 
     override fun onCreateView(
         li: LayoutInflater, vg: ViewGroup?, bundle: Bundle?
     ): View {
-        viewModel = ViewModelProvider(requireActivity()).get(ShoeListViewModel::class.java)
         binding = DataBindingUtil.inflate(
             li, R.layout.fragment_shoe_list, vg, false
         )
