@@ -5,7 +5,7 @@
         android:id="@+id/frameLayout"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
-
+        <!--Constraint Layout makes the layout consistent across configurations-->
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/constraintLayout"
             android:layout_width="wrap_content"

@@ -9,7 +9,7 @@
             name="Shoe"
             type="com.udacity.shoestore.models.Shoe" />
     </data>
-
+    <!--Constraint Layout makes the layout consistent across configurations-->
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/frameLayout5"
         android:layout_width="match_parent"
